@@ -1,0 +1,227 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Let's Plant</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'main/style.css' %}" type="text/css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+	<a class="navbar-brand toplogo"> <img class="toplogo"src="{% static 'main/treelogo.jpg' %}"  alt="treelogo" ></a>
+	<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
+		<span class="navbar-toggler-icon"></span>
+	</button>	 
+	<div class=	"collapse navbar-collapse" id="navbarMenu">
+		<ul class="navbar-nav ml-auto">
+			<li class="nav-item">
+				<a href="#"class="nav-link">About</a></li>
+			<li class="nav-item">
+				<a href="#"class="nav-link">Projects</a></li>
+      <li class="nav-item">
+        <a href="/members"class="nav-link">Members</a></li>
+        <li class="nav-item">
+        <a href="/login"class="nav-link">Login</a></li>   
+      <li class="nav-item">
+        <a href="/register/"class="nav-link">Register</a></li>
+    </ul>    
+	</div>
+      	
+</nav>
+
+
+
+<!---Start Image Slider--->
+
+<div id="carouselIndicators" class="carousel slide mt-4" data-ride="carousel" 
+data-interval="7000">
+	<ol class="carousel-indicators">
+		<li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+		<li data-target="#carouselIndicators" data-slide-to="1"></li>
+		<li data-target="#carouselIndicators" data-slide-to="2"></li>
+	</ol>
+	<div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="{% static 'main/hands.jpeg' %}" class="d-block w-100" alt="hands">
+      	<div class="carousel-caption text-center">
+      		<h1>Welcome to Let's Plant</h1>
+      		<h3>Tree Planting Mobilization</h3>
+    		</a>
+    	</div>	
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'main/highreztree.jpg' %}" class="d-block w-100" alt="highreztree">
+    </div>
+    <div class="carousel-item">
+      <img src="{% static 'main/tree-of-life.jpg' %}" class="d-block w-100" alt="tree of life">
+    </div>
+  </div>
+	<!-----End of inner--->
+	<a class="carousel-control-prev" href="#carouselIndicators" role="button" data-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+	</a>
+	<a class="carousel-control-next" href="#carouselIndicators" role="button" data-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+	</a>	
+	
+
+</div>
+<!--------End of slider---->
+
+</div>	
+
+<!-------New Section Body ----->
+<div class="container my-container mt-4">
+  <div class="row my-row justify-content-between align-items-center">
+    <div class="col my-col">
+        <!----Row 1 Col 1---->
+	       <h1 class="header text-center">Our Mission</h1>
+	         <p class="lead text-left"> We are Dedicated to planting 100 billion trees by 2030!<br> We will accomplish this goal by education and mobiliation of humianity.</br></p>
+      </div>  
+      <div class="col my-col">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SL6t5SUrat0?&autoplay=1&mute=1&loop=1&playlist=SL6t5SUrat0&controls=0" frameborder="0" allow="accelerometer; autoplay;allowfullscreen"></iframe>
+    </div>
+   </div>   
+</div>
+<div class="container my-container mt-4 ">
+  <div class="row my-row justify-content-between align-items-center">
+    <div class="col my-col">
+      <h1 class="header text-center">Projects</h1>
+        <h3>Eithiopia</h3>
+           <p class="lead text-left">We are mobilized to reduce the threat of climate change<br>Through massive efforts of the country we have surpassed 350 million trees in 1 day.</br></p>
+      </div>  
+      <div class="col my-col">
+        <img src="{% static 'main/eithiopia.jpg' %}" width="560" height="315" alt="Responsive image">
+      </div>
+      <div class="container my-container mt-4">
+      <div class="row my-row justify-content-between align-items-center">
+        <div class="col my-col">
+          <h3>The Amazon</h3>
+           <p class="lead text-left">We are mobilized to reduce the threat of climate change<br>Through massive efforts there is a plan in place of reforestation of 73 million trees.</br></p>
+        </div>
+      <div class="col my-col">
+        <img src="{% static 'main/amazon.jpg' %}" width="560" height="315" alt="Responsive image">
+      </div>  
+     </div> 
+    </div>
+    </div>
+    <!-- Footer -->
+<footer class="page-footer font-small pt-4 mt-4">
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left">
+
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-4 mx-auto">
+
+        <!-- Content -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Let's Plant</h5>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Company</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">About</a>
+          </li>
+          <li>
+            <a href="#!">Team</a>
+          </li>
+          <li>
+            <a href="#!">Contact</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Projects</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="#!">Locations</a>
+          </li>
+          <li>
+            <a href="#!">HelpUs</a>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+      <hr class="clearfix w-100 d-md-none">
+
+      <!-- Grid column -->
+      <div class="col-md-2 mx-auto">
+
+        <!-- Links -->
+        <h5 class="font-weight-bold text-uppercase mt-3 mb-4">Members</h5>
+
+        <ul class="list-unstyled">
+          <li>
+            <a href="/login">Login</a>
+          </li>
+          <li>
+            <a href="/register">Register</a>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <hr>
+
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">© 2020 Copyright:
+    <a href="#"> Letsplant.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+<!-- Footer -->
+<script>
+	var form = document.querySelector('.needs-validation')
+
+	form.addEventListener('submit', function(event){
+		if(form.checkValidity() === false){
+			event.preventDefault();
+			event.stopPropagation();
+
+		}
+		form.classList.add('was-validated');
+	})
+</script>	
+</body>
+
+</html>
